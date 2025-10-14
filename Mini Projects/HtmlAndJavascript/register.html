@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function validateRegister() {
+            var uid = document.getElementById('uid').value;
+            var pwd = document.getElementById('pwd').value;
+            var dob = document.getElementById('dob').value;
+            var contact = document.getElementById('contact').value;
+            var regex = /^(?=.*[A-Z])(?=.*\d).{6,}$/;
+            var today = new Date();
+            if (uid.length < 4 || uid.length > 8) { alert('UserID must be 4-8 chars'); return false; }
+            if (!pwd.match(regex)) { alert('Invalid password'); return false; }
+            if (new Date(dob) >= today) { alert('DOB must be less than today'); return false; }
+            if (!/^\d{10}$/.test(contact)) { alert('Contact must be 10 digits'); return false; }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validateRegister()">
+        <table>
+            <tr><td>UserID:</td><td><input type="text" id="uid" maxlength="8"></td></tr>
+            <tr><td>Password:</td><td><input type="password" id="pwd" maxlength="8"></td></tr>
+            <tr><td>DOB:</td><td><input type="date" id="dob"></td></tr>
+            <tr><td>Gender:</td><td><input type="radio" name="gender" value="Male">Male
+                                        <input type="radio" name="gender" value="Female">Female</td></tr>
+            <tr><td>State:</td><td><select><option>Karnataka</option><option>Other</option></select></td></tr>
+            <tr><td>Contact Number:</td><td><input type="number" id="contact"></td></tr>
+            <tr><td>Address:</td><td><textarea></textarea></td></tr>
+            <tr><td colspan="2"><input type="submit" value="Register">
+                                <input type="reset"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
