@@ -89,6 +89,7 @@ public class EmployeeManagementSystem {
         System.out.println("----End of Report-----");
     }
 
+    @SuppressWarnings("unchecked")
     private static List<Employee> readEmployeesFromFile() {
         List<Employee> list = new ArrayList<>();
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_NAME))) {
