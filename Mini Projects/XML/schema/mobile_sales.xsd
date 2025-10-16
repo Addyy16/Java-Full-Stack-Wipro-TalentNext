@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MobileShowroom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Branch" maxOccurs="3" minOccurs="3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mobile" maxOccurs="50" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ModelName" type="xs:string"/>
+                    <xs:element name="Price" type="xs:decimal"/>
+                    <xs:element name="QuantitySold" type="xs:positiveInteger"/>
+                  </xs:sequence>
+                  <xs:attribute name="modelId" type="xs:positiveInteger" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

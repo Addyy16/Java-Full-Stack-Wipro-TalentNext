@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MobileShowroom>
+  <Branch name="Branch1">
+    <Mobile modelId="1">
+      <ModelName>iPhone 14</ModelName>
+      <Price>799</Price>
+      <QuantitySold>20</QuantitySold>
+    </Mobile>
+    <Mobile modelId="2">
+      <ModelName>Samsung Galaxy S23</ModelName>
+      <Price>699</Price>
+      <QuantitySold>15</QuantitySold>
+    </Mobile>
+    <!-- Add more models up to 50 -->
+  </Branch>
+  <Branch name="Branch2">
+    <Mobile modelId="1">
+      <ModelName>OnePlus 11</ModelName>
+      <Price>699</Price>
+      <QuantitySold>18</QuantitySold>
+    </Mobile>
+    <!-- Add more models -->
+  </Branch>
+  <Branch name="Branch3">
+    <Mobile modelId="1">
+      <ModelName>Google Pixel 8</ModelName>
+      <Price>599</Price>
+      <QuantitySold>22</QuantitySold>
+    </Mobile>
+    <!-- Add more models -->
+  </Branch>
+</MobileShowroom>
