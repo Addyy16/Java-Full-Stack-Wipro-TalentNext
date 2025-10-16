@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  padding: 10px 0;
+  position: relative;
+}
+.promo-message {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+.highlight {
+  color: red;
+  font-size: 1.4em;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.button-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+.button-bar button {
+  margin: 0 8px;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid #999;
+  background-color: white;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+.button-bar button img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.book-table td {
+  padding: 10px;
+}
+.book-img {
+  width: 80px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+  margin-bottom: 6px;
+}
+.book-info {
+  font-size: 0.9em;
+}
