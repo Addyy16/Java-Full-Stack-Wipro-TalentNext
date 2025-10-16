@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="post" action="login">
+        <label for="userid">UserID:</label>
+        <input type="text" id="userid" name="userid" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+    <p>New user? <a href="register.html">Register here</a></p>
+    <p style="color:red;">
+      <% String error = request.getParameter("error");
+         if ("true".equals(error)) { %>
+           Invalid UserID or Password.
+      <% } %>
+    </p>
+</body>
+</html>
